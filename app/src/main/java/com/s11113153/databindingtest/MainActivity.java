@@ -2,9 +2,6 @@ package com.s11113153.databindingtest;
 
 import com.s11113153.databindingtest.databinding.ActivityMainBinding;
 
-import junit.framework.Test;
-import junit.framework.TestResult;
-
 import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -26,24 +23,23 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
     final TitleAdapter adapter = new TitleAdapter(this);
+
     adapter
-      .addTitle(new Title("Simple Binding", () -> {
+      .addTitle(new Title("Simple Binding", ()-> SimpleBindingActivity.start(this)))
 
-      }))
       .addTitle(new Title("Auto Update", () -> {
-
       }))
+
       .addTitle(new Title("View With IDs", () -> {
-
       }))
+
       .addTitle(new Title("MVVM Pattern", () -> {
-
       }))
+
       .addTitle(new Title("Avoiding NullPointerException", () -> {
-
       }))
-      .addTitle(new Title("Include Data Binding Layout", () -> {
 
+      .addTitle(new Title("Include Data Binding Layout", () -> {
       }));
 
     binding.setListOnItemClickListener((AdapterView<?> parent, View view, int position, long id) ->
@@ -64,11 +60,6 @@ public class MainActivity extends AppCompatActivity {
       this.action = action;
     }
   }
-
-  interface test {
-    int add(int a, int b);
-  }
-
 
   private class TitleAdapter extends ArrayAdapter<Title> {
     private static final int ITEM_TYPE_TextView = 0;
