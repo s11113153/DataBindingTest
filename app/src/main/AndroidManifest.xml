@@ -20,6 +20,8 @@
         <activity android:name=".SimpleBindingActivity"/>
 
         <activity android:name=".AutoUpdateBindingActivity"/>
+
+        <activity android:name=".ViewsWithIDsActivity"/>
     </application>
 
 </manifest>

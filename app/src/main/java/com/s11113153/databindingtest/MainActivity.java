@@ -27,19 +27,15 @@ public class MainActivity extends AppCompatActivity {
     adapter
       .addTitle(new Title("Simple Binding", ()-> SimpleBindingActivity.start(this)))
 
-      .addTitle(new Title("Auto Update", () -> AutoUpdateBindingActivity.start(this)))
+      .addTitle(new Title("Auto Update", ()-> AutoUpdateBindingActivity.start(this)))
 
-      .addTitle(new Title("View With IDs", () -> {
-      }))
+      .addTitle(new Title("View With IDs", ()->  ViewsWithIDsActivity.start(this)))
 
-      .addTitle(new Title("MVVM Pattern", () -> {
-      }))
+      .addTitle(new Title("MVVM Pattern", ()-> {}))
 
-      .addTitle(new Title("Avoiding NullPointerException", () -> {
-      }))
+      .addTitle(new Title("Avoiding NullPointerException", ()-> {}))
 
-      .addTitle(new Title("Include Data Binding Layout", () -> {
-      }));
+      .addTitle(new Title("Include Data Binding Layout", ()-> {}));
 
     binding.setListOnItemClickListener((AdapterView<?> parent, View view, int position, long id) ->
         adapter.getItem(position).action.call()
