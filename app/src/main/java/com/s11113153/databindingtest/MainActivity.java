@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
     adapter
       .addTitle(new Title("Simple Binding", ()-> SimpleBindingActivity.start(this)))
 
-      .addTitle(new Title("Auto Update", () -> {
-      }))
+      .addTitle(new Title("Auto Update", () -> AutoUpdateBindingActivity.start(this)))
 
       .addTitle(new Title("View With IDs", () -> {
       }))

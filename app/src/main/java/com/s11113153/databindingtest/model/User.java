@@ -25,6 +25,7 @@ public class User extends BaseObservable{
 
   public User setName(String name) {
     this.name = name;
+    notifyPropertyChanged(BR.name);
     return this;
   }
 
@@ -39,6 +40,7 @@ public class User extends BaseObservable{
     return id;
   }
 
+  @Bindable
   public String getName() {
     return name;
   }
