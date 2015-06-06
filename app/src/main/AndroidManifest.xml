@@ -25,6 +25,8 @@
 
         <activity android:name=".MVVMActivity"/>
 
+        <activity android:name=".AvoidingNullPointerExceptionActivity"/>
+
     </application>
 
 </manifest>
