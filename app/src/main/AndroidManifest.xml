@@ -27,6 +27,8 @@
 
         <activity android:name=".AvoidingNullPointerExceptionActivity"/>
 
+        <activity android:name=".IncludeDataBindingLayoutActivity"/>
+
     </application>
 
 </manifest>

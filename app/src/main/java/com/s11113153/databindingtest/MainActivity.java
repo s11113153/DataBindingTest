@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
       .addTitle(new Title("Avoiding NullPointerException", ()-> AvoidingNullPointerExceptionActivity.start(this)))
 
-      .addTitle(new Title("Include Data Binding Layout", ()-> {}));
+      .addTitle(new Title("Include Data Binding Layout", ()-> IncludeDataBindingLayoutActivity.start(this)));
 
     binding.setListOnItemClickListener((AdapterView<?> parent, View view, int position, long id) ->
         adapter.getItem(position).action.call()
