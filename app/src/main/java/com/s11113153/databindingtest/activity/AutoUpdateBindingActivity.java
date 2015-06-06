@@ -1,5 +1,6 @@
-package com.s11113153.databindingtest;
+package com.s11113153.databindingtest.activity;
 
+import com.s11113153.databindingtest.R;
 import com.s11113153.databindingtest.databinding.ActivityAutoUpdateBinding;
 import com.s11113153.databindingtest.model.User;
 
