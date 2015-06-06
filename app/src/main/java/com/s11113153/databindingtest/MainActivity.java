@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
       .addTitle(new Title("Auto Update", ()-> AutoUpdateBindingActivity.start(this)))
 
-      .addTitle(new Title("View With IDs", ()->  ViewsWithIDsActivity.start(this)))
+      .addTitle(new Title("View With IDs", () -> ViewsWithIDsActivity.start(this)))
 
-      .addTitle(new Title("MVVM Pattern", ()-> {}))
+      .addTitle(new Title("MVVM Pattern", ()-> MVVMActivity.start(this)))
 
       .addTitle(new Title("Avoiding NullPointerException", ()-> {}))
 

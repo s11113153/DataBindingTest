@@ -8,7 +8,7 @@ import android.databinding.Bindable;
 /**
  * Created by xuyouren on 15/6/4.
  */
-public class User extends BaseObservable{
+public class User extends BaseObservable {
 
   private long id;
 
